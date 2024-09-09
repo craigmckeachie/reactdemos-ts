@@ -30,7 +30,9 @@ function App() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Link</a>
+                <Link className="nav-link" to="/proper-personal-greeter">
+                  Proper Personal Greeter
+                </Link>
               </li>
             </ul>
           </nav>
