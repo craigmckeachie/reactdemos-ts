@@ -35,6 +35,11 @@ function SideBar() {
               Click Me Button
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/fruit-list-delete">
+              Fruit List Delete
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </section>

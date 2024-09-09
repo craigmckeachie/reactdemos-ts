@@ -13,7 +13,7 @@ function App() {
 
       <main className="d-flex gap-4">
         <SideBar />
-        <section className="mt-4">
+        <section className="mt-4 container-fluid">
           <Outlet />
         </section>
       </main>
