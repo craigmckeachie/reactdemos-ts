@@ -6,6 +6,15 @@ import Greeter from './Greeter.tsx';
 import PersonalGreeter from './PersonalGreeter.tsx';
 import ParentFragment from './ParentFragment.tsx';
 import ProperPersonalGreeter from './ProperPersonalGreeter.tsx';
+import FruitList from './FruitList.tsx';
+
+const fruitArray = [
+  { id: 1, name: 'apple' },
+  { id: 2, name: 'orange' },
+  { id: 3, name: 'blueberry' },
+  { id: 4, name: 'banana' },
+  { id: 5, name: 'kiwi' },
+];
 
 const router = createBrowserRouter([
   {
@@ -19,6 +28,7 @@ const router = createBrowserRouter([
         path: 'proper-personal-greeter',
         element: <ProperPersonalGreeter first="Calvin" last="Broadus" />,
       },
+      { path: 'fruit-list', element: <FruitList fruits={fruitArray} /> },
     ],
   },
 ]);

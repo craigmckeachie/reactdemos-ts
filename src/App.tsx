@@ -34,6 +34,11 @@ function App() {
                   Proper Personal Greeter
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/fruit-list">
+                  Fruit List
+                </Link>
+              </li>
             </ul>
           </nav>
         </section>
