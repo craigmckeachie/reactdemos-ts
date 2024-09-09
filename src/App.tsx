@@ -39,6 +39,11 @@ function App() {
                   Fruit List
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/click-me-button">
+                  Click Me Button
+                </Link>
+              </li>
             </ul>
           </nav>
         </section>
