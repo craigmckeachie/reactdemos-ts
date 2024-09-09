@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -14,36 +15,28 @@ function App() {
           <nav>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  Link
-                </a>
+                <Link className="nav-link" to="/greeter">
+                  Greeter
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
+                <Link className="nav-link" to="/personal-greeter">
+                  Personal Greeter
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
+                <Link className="nav-link" to="/parent-fragment">
+                  Parent Fragment
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-disabled="true">
-                  Link
-                </a>
+                <a className="nav-link">Link</a>
               </li>
             </ul>
           </nav>
         </section>
         <section className="mt-4">
-          <h3>Ready</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
-            blanditiis illum facere sequi soluta, fugiat mollitia tenetur
-            impedit illo aspernatur minima earum eligendi quam maiores quaerat
-            ipsa natus quas voluptatem.
-          </p>
+          <Outlet />
         </section>
       </main>
     </>
